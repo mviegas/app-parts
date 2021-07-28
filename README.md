@@ -2,22 +2,26 @@
 
 ## Table of Contents
 
-* [Context and objectives](#context-and-objectives)
+* [Introduction](#introduction)
+* [Context](#context)
 * [Technical approach](#technical-approach)
 * [Trade-off evaluation](#trade-off-evaluation)
 
-## Context and objectives
+## Introduction
 
-The goal of this repository is to study the pros and cons of having multiple APIs for a event-driven modular monolithic application. The final result for this study will be a descripted Architecture Decision Log of when this approach could be used and what would be the wins and losses with it. 
+The goal of this repository is to study the pros and cons of having multiple APIs for a event-driven modular monolithic application.
+
+The final result for this study will be a descripted Architecture Decision Log of when this approach could be used and what would be the wins and losses with it. 
+
+## Context
+
+A event-driven monolith started to escalate and having multiple responsibilities. It started as a single API to serve both third-party integrations and a front-end. However, as the business started to grow, the complexity also grew and required an isolation of responsibilities for a sustainable scaling.
 
 This case study relies on having two APIs:
 * BFF - Backend for Frontend
 * Integrations API
 
 Each one of these APIs will interact with a monolith with vertical-sliced features, meaning that each feature might have its own controller.
-
-> Disclaimer: this is still WIP. 
-
 
 ## Technical approach
 
