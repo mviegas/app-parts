@@ -1,5 +1,13 @@
 # Multiple single-purpose APIs for a event-driven modular monolith
 
+## Table of Contents
+
+* [Context and objectives](#context-and-objectives)
+* [Technical approach](#technical-approach)
+* [Trade-off evaluation](#trade-off-evaluation)
+
+## Context and objectives
+
 The goal of this repository is to study the pros and cons of having multiple APIs for a event-driven modular monolithic application. The final result for this study will be a descripted Architecture Decision Log of when this approach could be used and what would be the wins and losses with it. 
 
 This case study relies on having two APIs:
@@ -9,6 +17,11 @@ This case study relies on having two APIs:
 Each one of these APIs will interact with a monolith with vertical-sliced features, meaning that each feature might have its own controller.
 
 > Disclaimer: this is still WIP. 
+
+
+## Technical approach
+
+We will rely on [ASP.NET Application Parts](https://docs.microsoft.com/en-us/aspnet/core/mvc/advanced/app-parts?view=aspnetcore-5.0) to create our APIs and share specific features between them.
 
 ## Trade-off evaluation
 
