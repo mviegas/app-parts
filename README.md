@@ -27,6 +27,8 @@ Each one of these APIs will interact with a monolith with vertical-sliced featur
 
 We will rely on [ASP.NET Application Parts](https://docs.microsoft.com/en-us/aspnet/core/mvc/advanced/app-parts?view=aspnetcore-5.0) to create our APIs and share specific features between them.
 
+Each API has its own *IApplicationFeatureProvider* implementation to set the controllers that should be added as an Application Part.
+
 ## Trade-off evaluation
 
 ### Pros/Wins
