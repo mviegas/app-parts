@@ -4,7 +4,7 @@
 
 * [Introduction](#introduction)
 * [Context](#context)
-* [Technical approach](#technical-approach)
+* [Proposed solution](#proposed-solution)
 * [Trade-off evaluation](#trade-off-evaluation)
 
 ## Introduction
@@ -23,7 +23,7 @@ This case study relies on having two APIs:
 
 Each one of these APIs will interact with a monolith with vertical-sliced features, meaning that each feature might have its own controller.
 
-## Technical approach
+## Proposed Solution
 
 We will rely on [ASP.NET Application Parts](https://docs.microsoft.com/en-us/aspnet/core/mvc/advanced/app-parts?view=aspnetcore-5.0) to create our APIs and share specific features between them.
 
