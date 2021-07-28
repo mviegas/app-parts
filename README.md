@@ -32,6 +32,8 @@ Each API has its own *IApplicationFeatureProvider* implementation to set the con
 * [BFF](https://github.com/mviegas/app-parts/tree/main/src/BFF/ApplicationParts/BFFFeatureProvider.cs)
 * [Integrations API](https://github.com/mviegas/app-parts/tree/main/src/Integrations.API/ApplicationParts/IntegrationsAPIFeatureProvider.cs)
 
+With each Feature Provider defined, each API has its own Provider set via the ```ConfigureApplicationPartManager``` method under the *Startup* class.
+
 ## Trade-off evaluation
 
 ### Pros/Wins
