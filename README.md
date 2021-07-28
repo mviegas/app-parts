@@ -29,6 +29,9 @@ We will rely on [ASP.NET Application Parts](https://docs.microsoft.com/en-us/asp
 
 Each API has its own *IApplicationFeatureProvider* implementation to set the controllers that should be added as an Application Part.
 
+* [BFF](https://github.com/mviegas/app-parts/tree/main/src/BFF/ApplicationParts/BFFFeatureProvider.cs)
+* [Integrations API](https://github.com/mviegas/app-parts/tree/main/src/Integrations.API/ApplicationParts/IntegrationsAPIFeatureProvider.cs)
+
 ## Trade-off evaluation
 
 ### Pros/Wins
