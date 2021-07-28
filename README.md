@@ -51,6 +51,6 @@ This approach allows:
 		* Security.
 	* Within modules - endpoint-specific concerns:
 		* Endpoints;
-		* Return objects and status codes;
+		* Return objects and status codes.
 
 * A single feature, if shared between two APIs will, need to have two controllers/endpoints or share the same controller, which means no isolation.
